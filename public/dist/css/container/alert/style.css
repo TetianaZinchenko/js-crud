@@ -1,0 +1,25 @@
+.container {
+  display: flex;
+  padding: 16px;
+  gap: 16px;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #0072f8;
+  margin-bottom: 8px;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 16px;
+  border-radius: 10px;
+  color: #fff;
+  background-color: #0072f8;
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=style.css.map */

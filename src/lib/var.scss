@@ -1,5 +1,8 @@
 $colorMap: (
   light: #ddd,
+  accent: #0072f8,
+  button-white: #fff,
+  button-red: #ff0011,
 );
 
 @function color($key) {
