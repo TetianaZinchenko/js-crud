@@ -1,0 +1,25 @@
+@use '../../lib/service.scss' as s;
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: s.space(3);
+  width: 100%;
+
+  &__label {
+    font-size: 16px;
+  }
+
+  &__input {
+    border: 1px solid s.color('light-grey');
+    padding: s.space(4) s.space(8);
+    border-radius: s.space(1);
+
+    font-size: 20px;
+  }
+
+  &--disabled {
+    position: absolute;
+    display: none;
+  }
+}

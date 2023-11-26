@@ -1,8 +1,17 @@
 $colorMap: (
-  light: #ddd,
-  accent: #0072f8,
-  button-white: #fff,
+  light: #dddddd,
+  accent: #0d6efd,
+  title-accent: #0050ff,
+  button-white: #ffffff,
   button-red: #ff0011,
+  font-dark: #212529,
+  font-black: #000000,
+  box-shadow: rgba(0, 0, 0, 0.15),
+  light-grey: #ced4da,
+  caregory-green: #008000,
+  caregory-blue: #0050ff,
+  font-comment-span: #808080,
+  dark-gray: #343a40,
 );
 
 @function color($key) {

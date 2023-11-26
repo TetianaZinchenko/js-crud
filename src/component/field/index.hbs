@@ -1,0 +1,14 @@
+{{! __label
+Це код container файлу для index сторінки, 
+в якому міститься код, котрий буде віддаватися по шляху (PATH) - "/"
+ }}
+
+<div class='field {{#if disabled}}field--disabled{{/if}}'>
+  <label for="{{name}}" class="field__label">{{label}}</label>
+  <input type="{{#if type}}{{type}}{{/if}}" value="{{#if value}}{{value}}{{/if}}" name="{{name}}" class="field__input">
+</div>
+
+{{! 
+    Цей код містить лише те, що буде виводитись в <body>
+    Адже наш layout/default.hbs має вже структуру HTML
+}}

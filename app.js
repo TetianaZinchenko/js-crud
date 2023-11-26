@@ -50,6 +50,16 @@ if (process.env.NODE_ENV === 'development') {
 
 const route = require('./src/route/index.js')
 
+// Підключення роутів
+const route1 = require('./src/route/user.js')
+const route2 = require('./src/route/product.js')
+const route3 = require('./src/route/purchase.js')
+
+app.use('', route1)
+app.use('', route2)
+app.use('', route3)
+//
+
 app.use('/', route)
 // catch 404 and forward to error handler
 app.use((req, res, next) => {

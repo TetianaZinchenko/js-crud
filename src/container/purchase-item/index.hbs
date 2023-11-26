@@ -1,0 +1,81 @@
+{{! 
+Це код container файлу для index сторінки, 
+в якому міститься код, котрий буде віддаватися по шляху (PATH) - "/purchase"
+ }}
+
+<main class="main">
+
+{{#with data.item}}
+ 
+  {{> heading title="Інформація про замовлення"}}
+  
+<div class="purchase-item">
+    <span>ID:</span> {{id}}
+  </div>
+
+{{> divider}}
+
+  <div class="purchase-item__group">
+    <div class="purchase-item">
+    <span>Ім'я:</span> {{firstname}}
+  </div>
+
+  <div class="purchase-item">
+    <span>Прізвище:</span> {{lastname}}
+  </div>
+  </div>
+
+  <div class="purchase-item__group">
+    <div class="purchase-item">
+    <span>Телефон:</span> {{phone}}
+  </div>
+
+  <div class="purchase-item">
+    <span>Електронна пошта:</span> {{email}}
+  </div>
+  </div>
+
+  {{> divider}}
+
+  <div class="purchase-item">
+    <span>Назва товару:</span> {{product.title}}
+  </div>
+
+  <div class="purchase-item">
+    <span>Коментар:</span> {{#if comment}}{{comment}}{{else}}-{{/if}}
+  </div>
+
+  {{> divider}}
+
+  <div class="purchase-item__group">
+    <div class="purchase-item">
+    <span>Вартість товарів:</span> {{productPrice}}₴
+  </div>
+
+  <div class="purchase-item">
+    <span>Вартість доставки:</span> {{deliveryPrice}}₴
+  </div>
+  </div>
+
+  <div class="purchase-item__group">
+    <div class="purchase-item">
+    <span>Сума до сплати:</span> {{totalPrice}}₴
+  </div>
+
+  <div class="purchase-item">
+    <span>Нараховані бонуси:</span> {{bonusProduct}}₴
+  </div>
+  </div>
+
+{{> divider}}
+
+<a href='/purchase-edit?id={{id}}' class="button button--blue">Змінити дані</a>
+
+{{/with}}
+
+</main>
+
+{{! 
+    Цей код містить лише те, що буде виводитись в <body>
+    Адже наш layout/default.hbs має вже структуру HTML
+}}

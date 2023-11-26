@@ -1,0 +1,61 @@
+@use '../../lib/service.scss' as s;
+
+.card {
+  display: flex;
+  justify-content: space-between;
+
+  border: 1px solid s.color('light');
+  box-shadow: 0px 4px s.space(4) 15px 0px
+    s.color('box-shadow');
+  padding: s.space(4);
+  border-radius: 12px;
+  width: 800px;
+
+  &__header {
+    color: s.color('font-dark');
+
+    display: flex;
+    flex-direction: column;
+    gap: s.space(4);
+  }
+
+  &__title {
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  &__subtitle {
+    font-size: 16px;
+  }
+
+  &__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: s.space(2) s.space(15);
+    border-radius: 4px;
+
+    color: s.color('button-white');
+    font-size: 20px;
+
+    text-decoration: none;
+
+    cursor: pointer;
+
+    transition: opacity 0.3s ease;
+
+    &--blue {
+      background-color: s.color('accent');
+      border: 1px solid s.color('accent');
+    }
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+}
+
+main {
+  padding: s.space(5);
+}

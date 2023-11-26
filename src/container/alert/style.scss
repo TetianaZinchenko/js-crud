@@ -22,4 +22,12 @@
   color: s.color('button-white');
   background-color: s.color('accent');
   text-decoration: none;
+
+  cursor: pointer;
+
+  transition: opacity 0.3s ease;
+
+  &:hover {
+    opacity: 0.7;
+  }
 }
