@@ -66,6 +66,8 @@
     color: s.color('button-white');
     background-color: s.color('accent');
 
+    cursor: pointer;
+
     &-container {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -79,6 +81,14 @@
       justify-content: center;
       background-color: s.color('button-red');
       text-decoration: none;
+
+      cursor: pointer;
+
+      transition: opacity 0.3s ease;
+
+      &:hover {
+        opacity: 0.7;
+      }
     }
   }
 }

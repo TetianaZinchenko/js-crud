@@ -1,0 +1,31 @@
+@use '../../lib/service.scss' as s;
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: s.space(2);
+
+  padding: s.space(2) s.space(30);
+
+  border-radius: s.space(1);
+  border: 1px solid transparent;
+
+  color: s.color('button-white');
+  font-size: 16px;
+
+  text-decoration: none;
+
+  cursor: pointer;
+
+  transition: opacity 0.3s ease;
+
+  &--blue {
+    background-color: s.color('accent');
+    border: 1px solid s.color('accent');
+  }
+
+  &:hover {
+    opacity: 0.7;
+  }
+}

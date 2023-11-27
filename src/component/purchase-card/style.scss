@@ -1,0 +1,71 @@
+@use '../../lib/service.scss' as s;
+
+.purchase-card {
+  // border: 1px solid s.color('light');
+  // box-shadow: 4px 4px 4px 0px s.color('light');
+  padding: s.space(5);
+  border-radius: 20px;
+
+  // display: flex;
+  // flex-direction: column;
+  display: grid;
+  grid-template-columns: 0.5fr 2fr 1fr 1fr;
+  align-items: center;
+
+  gap: s.space(5);
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    gap: s.space(3);
+
+    font-size: 16px;
+    line-height: 150%;
+  }
+
+  &__id {
+    color: s.color('font-comment-span');
+
+    cursor: pointer;
+
+    text-decoration: none;
+  }
+
+  &__item-title {
+    color: s.color('font-comment-span');
+  }
+
+  &__item-info {
+    color: s.color('font-black');
+  }
+
+  &__name {
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  &__info {
+    display: flex;
+    gap: s.space(5);
+    justify-content: space-between;
+  }
+
+  &__price {
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  &__link {
+    font-size: 20px;
+    color: s.color('accent');
+    text-decoration: none;
+
+    cursor: pointer;
+
+    transition: opacity 0.3s ease;
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+}

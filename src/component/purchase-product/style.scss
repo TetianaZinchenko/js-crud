@@ -1,0 +1,101 @@
+@use '../../lib/service.scss' as s;
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  gap: s.space(4);
+
+  width: 320px;
+
+  padding: s.space(4);
+
+  border-radius: 12px;
+  border: 1px solid s.color('light-grey');
+
+  color: s.color('font-dark');
+
+  &__image {
+    max-height: 300px;
+    width: 100%;
+  }
+
+  &__title {
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  &__subtitle {
+    font-size: 16px;
+    line-height: 140%;
+  }
+
+  &__categories {
+    height: 100%;
+    min-height: 94px;
+
+    display: flex;
+    flex-direction: column;
+    gap: s.space(4);
+  }
+
+  &__category {
+    font-size: 16px;
+    line-height: 140%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: s.space(2) s.space(4);
+    border-radius: 80px;
+
+    color: s.color('button-white');
+    font-size: 20px;
+
+    text-decoration: none;
+
+    border: 1px solid transparent;
+
+    &--1 {
+      color: s.color('caregory-green');
+      border-color: s.color('caregory-green');
+    }
+
+    &--2 {
+      color: s.color('caregory-blue');
+      border-color: s.color('caregory-blue');
+    }
+  }
+
+  &__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+
+    padding: s.space(4) s.space(8);
+    border-radius: 8px;
+
+    color: s.color('button-white');
+    font-size: 16px;
+
+    text-decoration: none;
+
+    cursor: pointer;
+
+    transition: opacity 0.3s ease;
+
+    &--blue {
+      background-color: s.color('title-accent');
+      border: 1px solid s.color('title-accent');
+    }
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+
+  &__button-price {
+    font-size: 20px;
+  }
+}

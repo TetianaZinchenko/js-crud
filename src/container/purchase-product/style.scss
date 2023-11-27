@@ -1,0 +1,127 @@
+@use '../../lib/service.scss' as s;
+
+@use '../../component/heading/style.scss' as heading;
+@use '../../component/purchase-product/style.scss' as
+  purchaseProduct;
+
+@use '../../component/field/style.scss' as field;
+@use '../../component/divider/style.scss' as divider;
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: s.space(15);
+  padding: s.space(10);
+}
+
+.product-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: s.space(5);
+
+  &__image {
+    max-height: 624px;
+    width: 100%;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: s.space(8);
+    align-items: flex-start;
+  }
+
+  &__title {
+    color: s.color('title-accent');
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 120%;
+  }
+
+  &__subtitle {
+    color: s.color('font-black');
+    font-size: 16px;
+    line-height: 150%;
+  }
+
+  &__categories {
+    height: 100%;
+    min-height: 94px;
+
+    display: flex;
+    flex-direction: column;
+    gap: s.space(4);
+  }
+
+  &__category {
+    font-size: 16px;
+    line-height: 140%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: s.space(2) s.space(4);
+    border-radius: 80px;
+
+    color: s.color('button-white');
+    font-size: 20px;
+
+    text-decoration: none;
+
+    border: 1px solid transparent;
+
+    &--1 {
+      color: s.color('caregory-green');
+      border-color: s.color('caregory-green');
+    }
+
+    &--2 {
+      color: s.color('caregory-blue');
+      border-color: s.color('caregory-blue');
+    }
+  }
+
+  &__heading {
+    text-align: center;
+  }
+
+  &__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: s.space(2);
+
+    padding: s.space(4) s.space(8);
+    border-radius: s.space(2);
+
+    color: s.color('button-white');
+    font-size: 16px;
+
+    text-decoration: none;
+
+    cursor: pointer;
+
+    transition: opacity 0.3s ease;
+
+    &--blue {
+      background-color: s.color('title-accent');
+      border: 1px solid s.color('title-accent');
+    }
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+
+  &__button-price {
+    font-size: 20px;
+  }
+}
+
+.product-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: s.space(5);
+  row-gap: s.space(15);
+}

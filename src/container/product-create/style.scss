@@ -65,6 +65,14 @@
     border-radius: 10px;
     color: s.color('button-white');
     background-color: s.color('accent');
+
+    cursor: pointer;
+
+    transition: opacity 0.3s ease;
+
+    &:hover {
+      opacity: 0.7;
+    }
   }
 }
 
