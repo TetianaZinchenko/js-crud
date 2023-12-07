@@ -1,0 +1,30 @@
+@use '../../lib/service.scss' as s;
+
+@use '../../lib/spotify.scss' as spotify;
+
+@use '../../component/playlist-card/style.scss' as
+  playlistCard;
+
+.list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__title {
+    font-size: 40px;
+    font-weight: 500;
+  }
+
+  &__button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: s.space(10);
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 54px 30px;
+  }
+}

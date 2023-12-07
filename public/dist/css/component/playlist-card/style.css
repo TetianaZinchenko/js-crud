@@ -1,0 +1,17 @@
+.playlist-card__link {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.playlist-card__image {
+  width: 345px;
+  height: 345px;
+}
+.playlist-card__name {
+  font-size: 20px;
+}
+.playlist-card__description {
+  font-size: 16px;
+}
+
+/*# sourceMappingURL=style.css.map */

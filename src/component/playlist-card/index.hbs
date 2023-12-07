@@ -1,0 +1,30 @@
+{{! 
+Це код container файлу для index сторінки, 
+в якому міститься код, котрий буде віддаватися по шляху (PATH) - "/"
+ }}
+
+{{#with data}}
+  <div class='playlist-card'>
+
+    <a href='#' class='playlist-card__link'>
+      <img
+        src='{{image}}'
+        alt='{{name}}'
+        class='playlist-card__image'
+        width='345px'
+        height='345px'
+      />
+      <h2 class='playlist-card__name'>
+        {{name}}
+      </h2>
+      <p class='playlist-card__count'>{{tracks.length}}
+        пісень</p>
+    </a>
+
+  </div>
+{{/with}}
+
+{{! 
+    Цей код містить лише те, що буде виводитись в <body>
+    Адже наш layout/default.hbs має вже структуру HTML
+}}

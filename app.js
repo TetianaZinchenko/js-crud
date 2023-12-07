@@ -54,10 +54,12 @@ const route = require('./src/route/index.js')
 const route1 = require('./src/route/user.js')
 const route2 = require('./src/route/product.js')
 const route3 = require('./src/route/purchase.js')
+const route4 = require('./src/route/spotify.js')
 
 app.use('', route1)
 app.use('', route2)
 app.use('', route3)
+app.use('', route4)
 //
 
 app.use('/', route)
