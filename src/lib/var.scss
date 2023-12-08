@@ -12,6 +12,11 @@ $colorMap: (
   caregory-blue: #0050ff,
   font-comment-span: #808080,
   dark-gray: #343a40,
+  dark: #121212,
+  border: #808080,
+  button-green: #20d562,
+  search: #292929,
+  font-gray: #bdbdbd,
 );
 
 @function color($key) {
